@@ -66,8 +66,7 @@ node_trace = go.Scatter(
 
 fig = go.Figure(data=[edge_trace, node_trace],
                 layout=go.Layout(
-                    title='<br>Интерактивный граф категорий и ключевых слов',
-                    titlefont_size=16,
+                    title=dict(text='Интерактивный граф категорий и ключевых слов', font=dict(size=16)),
                     showlegend=False,
                     hovermode='closest',
                     margin=dict(b=20,l=5,r=5,t=40),
